@@ -1,18 +1,36 @@
-import Abhishek from './components/expenseitem.js';
+import Expenses from "./components/expenses";
 
 function App() {
-   let expenseDate = new Date(2023, 8 ,10);
-   let expenseTitle = 'School fee';
-   let expenseAmount = 200;
+let expenses = [
+   {
+      id: 'e1',
+      Date : new Date(2023, 8 ,10),
+      Title : 'House rent',
+      Amount : 500,
+   },
+   {
+      id: 'e2',
+      Date : new Date(2023, 8 ,20),
+      Title : 'School fee',
+      Amount : 100,
+   },
+   {
+      id: 'e3',
+      Date : new Date(2023, 8 ,30),
+      Title : 'Food',
+      Amount : 200,
+   },
+   {
+      id: 'e4',
+      Date : new Date(2023, 9 ,20),
+      Title : 'insurence',
+      Amount : 150,
+   },
+]
    return (
       <div>
          <h2>Lets start</h2>
-      <Abhishek
-      Date = {expenseDate}
-      Title = {expenseTitle}
-      Amount ={expenseAmount}>
-      
-      </Abhishek> 
+         <Expenses item = {expenses}/>
       </div>
         );
 }
