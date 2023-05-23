@@ -3,7 +3,7 @@ import Abhishek from './expenseitem';
 
 function Expenses(props){
     return (
-        <div>
+        <div className = 'expenses'>
         <Abhishek
         Date = {props.item[0].Date}
         Title = {props.item[0].Title}
