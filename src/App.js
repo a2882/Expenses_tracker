@@ -12,7 +12,7 @@ let expenses = [
       id: 'e2',
       Date : new Date(2023, 8 ,20),
       Title : 'School fee',
-      Amount : 100,
+      Amount : 150,
    },
    {
       id: 'e3',
