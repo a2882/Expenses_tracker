@@ -30,6 +30,7 @@ let expenses = [
    return (
       <div>
          <h2>Lets start</h2>
+         
          <Expenses item = {expenses}/>
       </div>
         );
